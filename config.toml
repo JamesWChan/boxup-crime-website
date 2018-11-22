@@ -30,7 +30,7 @@ googleAnalytics = ""
 
 	# Navigation
 	[params.navigation]
-		brand = "img/logo-small.png"
+		brand = "img/logo-small2.png"
 
 		[params.navigation.links]
 			about     = "About Us"
