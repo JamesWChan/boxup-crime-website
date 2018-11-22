@@ -30,7 +30,7 @@ googleAnalytics = ""
 
 	# Navigation
 	[params.navigation]
-		brand = "BoxUp Crime"
+		brand = "img/logo-small.png"
 
 		[params.navigation.links]
 			about     = "About Us"
@@ -44,8 +44,8 @@ googleAnalytics = ""
 	# Hero section
 	[params.hero]
 		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
-		slogan     = "Your awesome slogan"
-		subtitle   = "Rebuilding Misguided Dreams"
+		slogan     = "Rebuilding Misguided Dreams"
+		subtitle   = "Founded in 2013, BoxUpCrime is now London's leading social youth organisation. We have helped thousands of young people throughout London from disadvantaged and troubled bankgrounds to reclaim their dreams."
 		buttonText = "Find out more"
 
 
