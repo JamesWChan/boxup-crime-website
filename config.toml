@@ -6,6 +6,9 @@ googleAnalytics = ""
 
 [params]
 
+    # Custom css
+    custom_css = ["css/styles.css"]
+
 	# You can use Markdown syntax for urls [text](//url.to/source) for
 	# most longer texts.
 
@@ -26,8 +29,6 @@ googleAnalytics = ""
 	# The path must be relative to the static folder
 	favicon = "favicon.ico"
 
-    custom_css = ["css/styles.css"]
-
 	# Navigation
 	[params.navigation]
 		brand = "img/logo-small2.png"
@@ -45,16 +46,14 @@ googleAnalytics = ""
 	[params.hero]
 		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
 		slogan     = "Rebuilding Misguided Dreams"
-		subtitle   = "Founded in 2013, BoxUpCrime is now London's leading social youth organisation. We have helped thousands of young people throughout London from disadvantaged and troubled bankgrounds to reclaim their dreams."
+		subtitle   = "Founded in 2013, BoxUpCrime is now London's leading social youth organisation. We have helped thousands of young people throughout London from disadvantaged and troubled backgrounds to reclaim their dreams."
 		buttonText = "Find out more"
-
 
 	# About section
 	[params.about]
-		headline    = "We've got what you need!"
-		description = "[Lorem](//google.com) ipsum dolor sit amet, consectetur adipisicing elit. Praesentium similique eos eligendi error veritatis harum, sed aliquid totam, quam minus neque enim est architecto, ad. Maiores, aliquid, vitae!"
-		buttonText  = "Get started!"
-
+		headline    = "Who We Are"
+		description = "BoxUpCrime is a social youth organisation operating out of the London borough Barking and Dagenham. We work with young people at risk of having their lives ruined by crime and motivate them to rebuild and recapture their dreams and aspirations. We believe that every young person is entitled to a bright future, inspired by their hopes and dreams, regardless of their background. We deliver our tailored sessions to schools, pupil referral units and community centres across London. In our weekly sessions, we offer a foundation of discipline through engaging boxing training, educational programmes and mentoring. We provide young people job opportunities and apprenticeships as a stepping stone to their future."
+		buttonText  = "Our Founder"
 
 	# Mission section
 	[params.mission]
