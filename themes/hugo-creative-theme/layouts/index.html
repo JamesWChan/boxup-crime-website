@@ -5,47 +5,47 @@
     </head>
     <body id="page-top">
         {{ if or .Site.Params.navigation.links.about .Site.Params.navigation.links.mission .Site.Params.navigation.links.location .Site.Params.navigation.links.blog .Site.Params.navigation.links.tv .Site.Params.navigation.links.contact }}
-            {{ partial "nav.html" . }}
+        {{ partial "nav.html" . }}
         {{ end }}
 
         {{ if .Site.Params.hero }}
-            {{ partial "hero.html" . }}
+        {{ partial "hero.html" . }}
         {{ end }}
 
         {{ if .Site.Params.about }}
-            {{ partial "about.html" . }}
+        {{ partial "about.html" . }}
         {{ end }}
 
         {{ if .Site.Params.mission }}
-            {{ partial "mission.html" . }}
+        {{ partial "mission.html" . }}
+        {{ end }}
+
+        {{ if .Site.Params.locations }}
+        {{ partial "location.html" . }}
         {{ end }}
 
         {{ if .Site.Data.projects }}
-            {{ partial "portfolio.html" . }}
-        {{ end }}
-
-        {{ if .Site.Params.location }}
-            {{ partial "location.html" . }}
+        {{ partial "portfolio.html" . }}
         {{ end }}
 
         {{ if .Site.Params.blog }}
-            {{ partial "blog.html" . }}
+        {{ partial "blog.html" . }}
         {{ end }}
 
         {{ if .Site.Params.tv }}
-            {{ partial "boxUpTv.html" . }}
-        {{ end }}
-
-        {{ if .Site.Params.aside }}
-            {{ partial "aside.html" . }}
+        {{ partial "boxUpTv.html" . }}
         {{ end }}
 
         {{ if .Site.Params.contact }}
-            {{ partial "contact.html" . }}
+        {{ partial "contact.html" . }}
         {{ end }}
 
         {{ if .Site.Data.projects }}
-            {{ partial "modals.html" . }}
+        {{ partial "modals.html" . }}
+        {{ end }}
+
+        {{ if .Site.Data.test }}
+        {{ partial "founder.html" . }}
         {{ end }}
 
         {{ partial "js.html" . }}

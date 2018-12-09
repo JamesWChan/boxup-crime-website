@@ -1,5 +1,5 @@
 #mission {
-    color: red;
+    color: #333;
 }
 
 #blog{
@@ -10,8 +10,17 @@
     color: red;
 }
 
-#bs-example-navbar-collapse-1{
-    padding-bottom: 1em;
+#contact {
+    color: #fff;
+    background-image: url(../img/footer.jpg);
+}
+
+h2.section-heading{
+    padding-bottom: 1.5em;
+}
+
+.navbar-header{
+    padding-bottom: 1.7em;
 }
 
 .navbar-right{
