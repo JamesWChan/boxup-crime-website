@@ -32,10 +32,6 @@
         {{ partial "blog.html" . }}
         {{ end }}
 
-        {{ if .Site.Params.tv }}
-        {{ partial "boxUpTv.html" . }}
-        {{ end }}
-
         {{ if .Site.Params.contact }}
         {{ partial "contact.html" . }}
         {{ end }}
@@ -44,8 +40,12 @@
         {{ partial "modals.html" . }}
         {{ end }}
 
-        {{ if .Site.Data.test }}
+        {{ if .Site.Data.about }}
         {{ partial "founder.html" . }}
+        {{ end }}
+
+        {{ if .Site.Data.about }}
+        {{ partial "workWithUs.html" . }}
         {{ end }}
 
         {{ partial "js.html" . }}

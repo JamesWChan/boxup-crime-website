@@ -12,9 +12,11 @@
                 {{ with .Site.Params.about.description }}
                     <p class="text-faded">{{ . | markdownify }}</p>
                 {{ end }}
-                {{ with .Site.Params.about.buttonText }}
-                    <a href="#portfolioModal1" id="our-founder" class="btn btn-default btn-xl">{{ . }}</a>
-                {{ end }}
+                <div class="container-fluid">
+                    {{ range .Site.Data.about }}
+                        <a href="#aboutModal{{ .modalID }}" id="our-founder" class="btn btn-default btn-xl" data-toggle="modal">Our Founder</a>
+                    {{ end }}
+                </div>
             </div>
         </div>
     </div>

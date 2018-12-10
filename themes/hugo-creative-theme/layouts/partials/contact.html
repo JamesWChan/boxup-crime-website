@@ -48,16 +48,20 @@
                 <p>{{ .Site.Params.contact.address }}</p>
             </div>
             {{ end }}
-            {{ if .Site.Params.contact.hours }}
+            {{ if .Site.Params.contact.openingTimes1 }}
             <div class="
-                {{ if .Site.Params.contact.hours }}
+                {{ if .Site.Params.contact.openingTimes1 }}
                     col-lg-4
                 {{ else }}
                     col-lg-8 col-lg-offset-2
                 {{ end }}
                  text-center">
                 <i class="fa fa-clock-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                <p>{{ .Site.Params.contact.hours }}</p>
+                <p>{{ .Site.Params.contact.openingTimes1 }}</p>
+                <p>{{ .Site.Params.contact.openingTimes2 }}</p>
+                <p>{{ .Site.Params.contact.openingTimes3 }}</p>
+                <p>{{ .Site.Params.contact.openingTimes4 }}</p>
+                <p>{{ .Site.Params.contact.openingTimes5 }}</p>
             </div>
             {{ end }}
         </div>

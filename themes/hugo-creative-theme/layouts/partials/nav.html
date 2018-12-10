@@ -36,11 +36,6 @@
                     <a class="page-scroll" href="#blog">{{ .Site.Params.navigation.links.blog }}</a>
                 </li>
                 {{ end }}
-                {{ if and .Site.Params.tv .Site.Params.navigation.links.tv }}
-                <li>
-                    <a class="page-scroll" href="#tv">{{ .Site.Params.navigation.links.tv }}</a>
-                </li>
-                {{ end }}
                 {{ if and .Site.Params.contact .Site.Params.navigation.links.contact }}
                 <li>
                     <a class="page-scroll" href="#contact">{{ .Site.Params.navigation.links.contact }}</a>

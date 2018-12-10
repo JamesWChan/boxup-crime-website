@@ -40,7 +40,6 @@ googleAnalytics = ""
             mission   = "Our Mission"
             location  = "Location"
             blog      = "Blog"
-            tv        = "BoxUp TV"
             contact   = "Contact Us"
 
 
@@ -62,7 +61,8 @@ googleAnalytics = ""
 	# Mission section
     [params.mission]
         headline    = "Our Mission"
-        description = "Some funky writing about our mission."
+        description = "We want to provide the opportunity and resources to help all young people discover a true sense of self identity as well as guiding them to develop self-motivation. These skills will allow them to go on to live fulfiling and successful lives, which will ultimately decrease and prevent their involvement in crime."
+        buttonText  = "Work With Us"
 
         [[params.services.list]]
             icon = "fa-diamond"
@@ -98,14 +98,6 @@ googleAnalytics = ""
             category = "Category"
             buttonText = "Close"
 
-        # Aside section
-    	[params.aside]
-    	    headline = "Get the Creative Theme for Hugo"
-
-    		[params.aside.button]
-    		    text = "Download now"
-    		    link = "//github.com/digitalcraftsman/hugo-creative-theme"
-
         # Blog section
     	[params.blog ]
     	    headline = "Let's Get In Touch!"
@@ -127,7 +119,11 @@ googleAnalytics = ""
     	    phone = "0208 517 4446"
     	    email = "info@boxupcrime.org"
     	    address = "59 Grosvenor Road, Dagenham, Essex, RM8 1NL"
-    	    hours = "Opening Hours: Monday - Friday 09:00 - 17:00"
+    	    openingTimes1 = "Monday: 09:00 - 17:00"
+    	    openingTimes2 = "Tuesday: 09:00 - 17:00"
+    	    openingTimes3 = "Wednesday: 09:00 - 17:00"
+    	    openingTimes4 = "Thursday: 09:00 - 17:00"
+    	    openingTimes5 = "Friday 09:00 - 17:00"
 
 	# Google Maps section
 	# [params.location]
