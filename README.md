@@ -1,10 +1,12 @@
-# boxup-crime-website
-
 ## Installation
 
-### Prerequisites
+Please follow the instructions below to access this website locally.
+
+### Step 1: Prerequisites
 
 You will need Hugo installed to run this website locally. Installation instructions can be found here: https://gohugo.io/getting-started/installing/
+
+### Step 2: Running the website locally
 
 To run this website:
 
