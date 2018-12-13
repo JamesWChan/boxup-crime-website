@@ -24,8 +24,8 @@
         {{ partial "location.html" . }}
         {{ end }}
 
-        {{ if .Site.Params.stats }}
-        {{ partial "stats.html" . }}
+        {{ if .Site.Params.achievements }}
+        {{ partial "achievements.html" . }}
         {{ end }}
 
         <!--{{ if .Site.Data.projects }}-->
@@ -44,7 +44,7 @@
         {{ partial "founderModal.html" . }}
         {{ end }}
 
-        {{ if .Site.Data.about }}
+        {{ if .Site.Data.workWithUs }}
         {{ partial "workWithUsModal.html" . }}
         {{ end }}
 

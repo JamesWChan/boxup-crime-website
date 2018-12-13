@@ -64,8 +64,8 @@ googleAnalytics = ""
         buttonText  = "Work With Us"
 
 	# Statistics section
-    [params.stats]
-        headline    = "The Stats"
+    [params.achievements]
+        headline    = "Our Achievements"
 
     # Location section
     [params.locations]
