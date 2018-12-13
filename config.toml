@@ -70,19 +70,16 @@ googleAnalytics = ""
 		headline = "The Stats"
 
         [[params.services.list]]
-            # icon = "fa-diamond"
             icon = "stat1"
             title = "Sturdy Templates"
             description = "Our templates are updated regularly so they don't break."
 
         [[params.services.list]]
-			# icon = "fa-paper-plane"
 			icon = "stat2"
 			title = "Ready to Ship"
 			description = "You can use this theme as is, or you can make changes!"
 
 		[[params.services.list]]
-            # icon = "fa-newspaper-o"
             icon = "stat3"
             title = "Up to Date"
             description = "We update dependencies to keep things fresh."
@@ -91,8 +88,10 @@ googleAnalytics = ""
         # Location section
         [params.locations]
             headline = "Our Locations"
-            description = "Where you at fam?"
-            buttonText = "Switzerland"
+            description = "Please select one of our locations below:"
+            location1 = "BoxUp UK"
+            location2 = "BoxUp Switzerland"
+            location3 = "BoxUp Ghana"
 
         # Portfolio modals
     	[params.portfolio.modal]

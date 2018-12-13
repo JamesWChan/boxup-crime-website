@@ -12,10 +12,23 @@
                 {{ with .Site.Params.locations.description }}
                     <p class="text-faded">{{ . | markdownify }}</p>
                 {{ end }}
-                {{ with .Site.Params.locations.buttonText }}
-                    <a href="#" id="our-founder" class="btn btn-default btn-xl">{{ . }}</a>
+                {{ with .Site.Params.locations.location1 }}
+                <div class="col-lg-4 col-md-12">
+                    <a href="#" id="location1" class="btn btn-default btn-xl">{{ . }}</a>
+                </div>
+                {{ end }}
+                {{ with .Site.Params.locations.location2 }}
+                <div class="col-lg-4 col-md-12">
+                    <a href="#" id="location2" class="btn btn-default btn-xl">{{ . }}</a>
+                </div>
+                {{ end }}
+                {{ with .Site.Params.locations.location3 }}
+                <div class="col-lg-4 col-md-12">
+                    <a href="#" id="location3" class="btn btn-default btn-xl">{{ . }}</a>
+                </div>
                 {{ end }}
             </div>
         </div>
     </div>
 </section>
+
