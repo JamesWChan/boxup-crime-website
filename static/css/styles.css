@@ -27,14 +27,6 @@
     padding-top: 1em;
 }
 
-.stat1 {
-    background-image: url("http://boxupcrime.org/wp-content/uploads/2016/07/about1.png");
-}
-
-.stat2 {
-    background-color: blue;
-}
-
-.stat3 {
-    background-color: green;
+.location-btn {
+    margin-bottom: 1em;
 }

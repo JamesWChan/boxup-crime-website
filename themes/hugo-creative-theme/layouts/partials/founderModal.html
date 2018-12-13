@@ -1,6 +1,6 @@
-{{ "<!-- Portfolio Modals -->" | safeHTML }}
-{{ range .Site.Data.workWithUs }}
-<div class="portfolio-modal modal fade" id="work-with-us{{ .modalID }}" tabindex="-1" role="dialog" aria-hidden="true">
+{{ "<!-- Founder Modal -->" | safeHTML }}
+{{ range .Site.Data.about }}
+<div class="portfolio-modal modal fade" id="aboutModal{{ .modalID }}" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
             <div class="lr">
@@ -13,17 +13,17 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body">
                         {{ with .title }}
-                        <h2>{{ . }}</h2>
+                            <h2>{{ . }}</h2>
                         {{ end }}
                         {{ if and .title .description }}
-                        <hr class="star-primary">
+                            <hr class="star-primary">
                         {{ end }}
                         <img src="img/{{ .img }}" class="img-responsive img-centered" alt="">
                         {{ with .description }}
-                        <p>{{ . | markdownify }}</p>
+                            <p>{{ . | markdownify }}</p>
                         {{ end }}
                         {{ with $.Site.Params.portfolio.modal.buttonText }}
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>{{.}}</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>{{.}}</button>
                         {{ end }}
                     </div>
                 </div>

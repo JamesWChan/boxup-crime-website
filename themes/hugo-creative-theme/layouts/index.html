@@ -4,7 +4,7 @@
         {{ partial "head.html" . }}
     </head>
     <body id="page-top">
-        {{ if or .Site.Params.navigation.links.about .Site.Params.navigation.links.mission .Site.Params.navigation.links.location .Site.Params.navigation.links.blog .Site.Params.navigation.links.tv .Site.Params.navigation.links.contact }}
+        {{ if or .Site.Params.navigation.links.about .Site.Params.navigation.links.mission .Site.Params.navigation.links.location .Site.Params.navigation.links.blog .Site.Params.navigation.links.contact }}
         {{ partial "nav.html" . }}
         {{ end }}
 
@@ -24,8 +24,8 @@
         {{ partial "location.html" . }}
         {{ end }}
 
-        {{ if .Site.Params.services }}
-        {{ partial "services.html" . }}
+        {{ if .Site.Params.stats }}
+        {{ partial "stats.html" . }}
         {{ end }}
 
         <!--{{ if .Site.Data.projects }}-->
@@ -40,16 +40,16 @@
         {{ partial "contact.html" . }}
         {{ end }}
 
-        {{ if .Site.Data.projects }}
-        {{ partial "modals.html" . }}
+        {{ if .Site.Data.about }}
+        {{ partial "founderModal.html" . }}
         {{ end }}
 
         {{ if .Site.Data.about }}
-        {{ partial "founder.html" . }}
+        {{ partial "workWithUsModal.html" . }}
         {{ end }}
 
-        {{ if .Site.Data.about }}
-        {{ partial "workWithUs.html" . }}
+        {{ if .Site.Data.locations }}
+        {{ partial "locationModals.html" . }}
         {{ end }}
 
         {{ partial "js.html" . }}

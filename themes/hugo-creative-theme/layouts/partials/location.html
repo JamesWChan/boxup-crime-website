@@ -1,4 +1,4 @@
-{{ "<!-- ABOUT -->" | safeHTML }}
+{{ "<!-- LOCATIONS -->" | safeHTML }}
 <section class="bg-primary" id="location">
     <div class="container">
         <div class="row">
@@ -12,19 +12,9 @@
                 {{ with .Site.Params.locations.description }}
                     <p class="text-faded">{{ . | markdownify }}</p>
                 {{ end }}
-                {{ with .Site.Params.locations.location1 }}
-                <div class="col-lg-4 col-md-12">
-                    <a href="#" id="location1" class="btn btn-default btn-xl">{{ . }}</a>
-                </div>
-                {{ end }}
-                {{ with .Site.Params.locations.location2 }}
-                <div class="col-lg-4 col-md-12">
-                    <a href="#" id="location2" class="btn btn-default btn-xl">{{ . }}</a>
-                </div>
-                {{ end }}
-                {{ with .Site.Params.locations.location3 }}
-                <div class="col-lg-4 col-md-12">
-                    <a href="#" id="location3" class="btn btn-default btn-xl">{{ . }}</a>
+                {{ range .Site.Data.locations }}
+                <div class="col-lg-4 col-md-12">    
+                    <a href="#locationModal{{ .modalID }}" class="btn btn-default btn-xl location-btn" data-toggle="modal">{{.title}}</a>
                 </div>
                 {{ end }}
             </div>

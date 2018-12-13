@@ -1,0 +1,33 @@
+{{ "<!-- STATISTICS -->" | safeHTML }}
+<section id="stats">
+    {{ with .Site.Params.stats.headline }}
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">{{ . }}</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+    {{ end }}
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 text-center">
+                <div class="bounceIn">
+                    <img src="img/stat1.png">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 text-center">
+                <div class="bounceIn">
+                    <img src="img/stat2.png">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 text-center">
+                <div class="bounceIn">
+                    <img src="img/stat3.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

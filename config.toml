@@ -57,41 +57,23 @@ googleAnalytics = ""
         description = "BoxUpCrime is a social youth organisation operating out of the London borough Barking and Dagenham. We work with young people at risk of having their lives ruined by crime and motivate them to rebuild and recapture their dreams and aspirations. We believe that every young person is entitled to a bright future, inspired by their hopes and dreams, regardless of their background. We deliver our tailored sessions to schools, pupil referral units and community centres across London. In our weekly sessions, we offer a foundation of discipline through engaging boxing training, educational programmes and mentoring. We provide young people job opportunities and apprenticeships as a stepping stone to their future."
         buttonText  = "Our Founder"
 
-
 	# Mission section
     [params.mission]
         headline    = "Our Mission"
         description = "We want to provide the opportunity and resources to help all young people discover a true sense of self identity as well as guiding them to develop self-motivation. These skills will allow them to go on to live fulfiling and successful lives, which will ultimately decrease and prevent their involvement in crime."
         buttonText  = "Work With Us"
 
+	# Statistics section
+    [params.stats]
+        headline    = "The Stats"
 
-	# Service section
-	[params.services]
-		headline = "The Stats"
-
-        [[params.services.list]]
-            icon = "stat1"
-            title = "Sturdy Templates"
-            description = "Our templates are updated regularly so they don't break."
-
-        [[params.services.list]]
-			icon = "stat2"
-			title = "Ready to Ship"
-			description = "You can use this theme as is, or you can make changes!"
-
-		[[params.services.list]]
-            icon = "stat3"
-            title = "Up to Date"
-            description = "We update dependencies to keep things fresh."
-
-
-        # Location section
-        [params.locations]
-            headline = "Our Locations"
-            description = "Please select one of our locations below:"
-            location1 = "BoxUp UK"
-            location2 = "BoxUp Switzerland"
-            location3 = "BoxUp Ghana"
+    # Location section
+    [params.locations]
+        headline = "Our Locations"
+        description = "Please select one of our locations below:"
+        location1 = "BoxUp UK"
+        location2 = "BoxUp Switzerland"
+        location3 = "BoxUp Ghana"
 
         # Portfolio modals
     	[params.portfolio.modal]
@@ -101,7 +83,7 @@ googleAnalytics = ""
             buttonText = "Close"
 
         # Blog section
-    	[params.blog ]
+    	[params.blog]
     	    headline = "Let's Get In Touch!"
     	    description = "Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!"
     	    phone = "123-456-6789"
