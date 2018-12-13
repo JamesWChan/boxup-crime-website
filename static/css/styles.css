@@ -2,11 +2,11 @@
     color: #333;
 }
 
-#blog{
+#blog {
     color: red;
 }
 
-#tv{
+#tv {
     color: red;
 }
 
@@ -15,14 +15,26 @@
     background-image: url(../img/footer.jpg);
 }
 
-#contact h2.section-heading{
+#contact h2.section-heading {
     padding-bottom: 1.5em;
 }
 
-.navbar-header{
+.navbar-header {
     padding-bottom: 1.7em;
 }
 
-.navbar-right{
+.navbar-right {
     padding-top: 1em;
+}
+
+.stat1 {
+    background-image: url("http://boxupcrime.org/wp-content/uploads/2016/07/about1.png");
+}
+
+.stat2 {
+    background-color: blue;
+}
+
+.stat3 {
+    background-color: green;
 }

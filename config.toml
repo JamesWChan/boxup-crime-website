@@ -64,25 +64,28 @@ googleAnalytics = ""
         description = "We want to provide the opportunity and resources to help all young people discover a true sense of self identity as well as guiding them to develop self-motivation. These skills will allow them to go on to live fulfiling and successful lives, which will ultimately decrease and prevent their involvement in crime."
         buttonText  = "Work With Us"
 
+
+	# Service section
+	[params.services]
+		headline = "The Stats"
+
         [[params.services.list]]
-            icon = "fa-diamond"
+            # icon = "fa-diamond"
+            icon = "stat1"
             title = "Sturdy Templates"
             description = "Our templates are updated regularly so they don't break."
 
         [[params.services.list]]
-            icon = "fa-paper-plane"
-    	    title = "Ready to Ship"
-    	    description = "You can use this theme as is, or you can make changes!"
+			# icon = "fa-paper-plane"
+			icon = "stat2"
+			title = "Ready to Ship"
+			description = "You can use this theme as is, or you can make changes!"
 
-    	[[params.services.list]]
-            icon = "fa-newspaper-o"
+		[[params.services.list]]
+            # icon = "fa-newspaper-o"
+            icon = "stat3"
             title = "Up to Date"
             description = "We update dependencies to keep things fresh."
-
-        [[params.services.list]]
-            icon = "fa-heart"
-            title = "Made with Love"
-            description = "You have to make your websites with love these days!"
 
 
         # Location section
@@ -105,17 +108,9 @@ googleAnalytics = ""
     	    phone = "123-456-6789"
     	    email = "feedback@startbootstrap.com"
 
-
-        # Tv section
-    	[params.tv]
-    	    headline = "Let's Get In Touch!"
-    	    description = "Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!"
-    	    phone = "123-456-6789"
-    	    email = "feedback@startbootstrap.com"
-
     	# Contact section
     	[params.contact]
-    	    headline = "Let's Get In Touch!"
+    	    headline = "Contact Us"
     	    phone = "0208 517 4446"
     	    email = "info@boxupcrime.org"
     	    address = "59 Grosvenor Road, Dagenham, Essex, RM8 1NL"

@@ -24,13 +24,17 @@
         {{ partial "location.html" . }}
         {{ end }}
 
+        {{ if .Site.Params.services }}
+        {{ partial "services.html" . }}
+        {{ end }}
+
         {{ if .Site.Data.projects }}
         {{ partial "portfolio.html" . }}
         {{ end }}
 
-        {{ if .Site.Params.blog }}
+        <!--{{ if .Site.Params.blog }}
         {{ partial "blog.html" . }}
-        {{ end }}
+        {{ end }}-->
 
         {{ if .Site.Params.contact }}
         {{ partial "contact.html" . }}
