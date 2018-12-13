@@ -12,5 +12,5 @@ To run this website:
 
   - Clone the repository
   - In the terminal, navigate to the folder where you cloned this repository
-  - Run `hugo server`
+  - Run `hugo server` in the terminal
   - This site should then be available on your localhost on port 1313
