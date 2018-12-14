@@ -36,11 +36,12 @@ googleAnalytics = ""
 		brand = "img/logo-small2.png"
 
 		[params.navigation.links]
-			about     = "About Us"
-            mission   = "Our Mission"
-            location  = "Location"
-            blog      = "Blog"
-            contact   = "Contact Us"
+			about        = "About Us"
+            mission      = "Our Mission"
+            location     = "Location"
+            achievements = "Achievements"
+            blog         = "Blog"
+            contact      = "Contact Us"
 
 
 	# Hero section

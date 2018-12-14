@@ -30,3 +30,16 @@
 .custom-btn {
     margin-bottom: 1em;
 }
+
+.award {
+    border-radius: 100%;
+    margin-top: 2em;
+}
+
+.award-title {
+    text-transform: uppercase;
+}
+
+th {
+    text-align: center;
+}

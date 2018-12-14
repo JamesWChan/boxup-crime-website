@@ -22,6 +22,31 @@
                         {{ with .description }}
                         <p>{{ . | markdownify }}</p>
                         {{ end }}
+                        {{ with .subtitle }}
+                        <h2>{{ . }}</h2>
+                        <hr class="star-primary">
+                        {{ end }}
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th scope="col">{{ .class1 }}</th>
+                                <th scope="col">{{ .class2 }}</th>
+                                <th scope="col">{{ .class3 }}</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>{{ .class1Location }}</td>
+                                <td>{{ .class2Location }}</td>
+                                <td>{{ .class3Location }}</td>
+                            </tr>
+                            <tr>
+                                <td>{{ .class1Age }}</td>
+                                <td>{{ .class2Age }}</td>
+                                <td>{{ .class3Age }}</td>
+                            </tr>
+                            </tbody>
+                        </table>
                         {{ with $.Site.Params.portfolio.modal.buttonText }}
                         <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>{{.}}</button>
                         {{ end }}
