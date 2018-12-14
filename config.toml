@@ -65,7 +65,7 @@ googleAnalytics = ""
 
 	# Statistics section
     [params.achievements]
-        headline    = "Our Achievements"
+        headline    = "Achievements and Awards"
 
     # Location section
     [params.locations]

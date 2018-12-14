@@ -12,10 +12,12 @@
                 {{ with .Site.Params.about.description }}
                     <p class="text-faded">{{ . | markdownify }}</p>
                 {{ end }}
-                <div class="container-fluid">
-                    {{ range .Site.Data.about }}
-                        <a href="#aboutModal{{ .modalID }}" id="our-founder" class="btn btn-default btn-xl" data-toggle="modal">Our Founder</a>
-                    {{ end }}
+                <div class="container-fluid col-lg-offset-3">
+                        {{ range .Site.Data.about }}
+                        <div class="col-lg-4 col-md-12">
+                            <a href="#aboutModal{{ .modalID }}" class="btn btn-default btn-xl custom-btn" data-toggle="modal">{{.title}}</a>
+                        </div>
+                        {{ end }}
                 </div>
             </div>
         </div>
