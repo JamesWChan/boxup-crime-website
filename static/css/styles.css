@@ -1,3 +1,73 @@
 #mission {
+    color: #333;
+}
+
+#blog {
     color: red;
+}
+
+#tv {
+    color: red;
+}
+
+#contact {
+    color: #fff;
+    background-image: url(../img/footer.jpg);
+}
+
+#contact h2.section-heading {
+    padding-bottom: 1.5em;
+}
+
+.navbar-header {
+    padding-bottom: 1.7em;
+}
+
+.navbar-right {
+    padding-top: 1em;
+}
+
+.custom-btn {
+    margin-bottom: 1em;
+}
+
+.award {
+    border-radius: 100%;
+    margin-top: 2em;
+}
+
+.award-title {
+    text-transform: uppercase;
+}
+
+th {
+    text-align: center;
+}
+
+.social-icons {
+    margin: .1em;
+}
+
+h2#classes {
+    margin-top: 2em;
+}
+
+#copyright {
+    padding-top: 2em;
+}
+
+.video{
+    width: 100%;
+}
+
+.contact {
+    margin-bottom: .3em;
+}
+
+section#intro-video {
+    padding: 0;
+}
+
+body section#portfolio .boxup-image {
+    width: 100%
 }

@@ -36,15 +36,6 @@ a:focus {
     color: #eb3812;
 }
 
-#about a {
-    color: rgba(52, 52, 52, .7);
-}
-
-#about a:hover,
-#about a:focus {
-    color: rgb(52, 52, 52);
-}
-
 h1,
 h2,
 h3,
@@ -187,7 +178,7 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(../img/background1.png);
+    background-image: url(../img/header.jpg);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;

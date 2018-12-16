@@ -1,1 +1,24 @@
-<p id="mission">Our Mission</p>
+{{ "<!-- MISSION -->" | safeHTML }}
+<section id="mission">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                {{ with .Site.Params.mission.headline }}
+                    <h2 class="section-heading">{{ . }}</h2>
+                {{ end }}
+                {{ if and .Site.Params.mission.headline .Site.Params.mission.description }}
+                    <hr class="primary">
+                {{ end }}
+                {{ with .Site.Params.mission.description }}
+                    <p>{{ . | markdownify }}</p>
+                {{ end }}
+                <div class="container-fluid">
+                    {{ range .Site.Data.workWithUs }}
+                        <a href="#work-with-us{{ .modalID }}" id="work-with-us" class="btn btn-primary btn-xl" data-toggle="modal">Work With Us</a>
+                    {{ end }}
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

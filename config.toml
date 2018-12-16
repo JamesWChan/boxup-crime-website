@@ -6,6 +6,9 @@ googleAnalytics = ""
 
 [params]
 
+    # Custom css
+    custom_css = ["css/styles.css"]
+
 	# You can use Markdown syntax for urls [text](//url.to/source) for
 	# most longer texts.
 
@@ -21,102 +24,81 @@ googleAnalytics = ""
 	# To provide some metadata for search engines feel free to add some
 	# information about you and your website.
 	name = "BoxUp Crime"
-	description = "BoxUpCrime is a social youth organisation operating out of the London borough Barking and Dagenham. We work with young people at risk of having their lives ruined by crime and motivate them to rebuild and recapture their dreams and aspirations."
+   	description = "BoxUpCrime is a social youth organisation operating out of the London borough Barking and Dagenham. We work with young people at risk of having their lives ruined by crime and motivate them to rebuild and recapture their dreams and aspirations."
+
 
 	# The path must be relative to the static folder
 	favicon = "favicon.ico"
 
-    custom_css = ["css/styles.css"]
 
 	# Navigation
 	[params.navigation]
-		brand = "BoxUp Crime"
+		brand = "img/logo-small2.png"
 
 		[params.navigation.links]
-			about     = "About Us"
-			mission   = "Our Mission"
-			location  = "Location"
-			blog      = "Blog"
-			tv        = "BoxUp TV"
-			contact   = "Contact Us"
+			about        = "About Us"
+			getInvolved  = "Get Involved"
+            location     = "Locations"
+            achievements = "Achievements"
+            blog         = "Blog"
+            contact      = "Contact Us"
 
 
 	# Hero section
 	[params.hero]
 		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
-		slogan     = "Your awesome slogan"
-		subtitle   = "Rebuilding Misguided Dreams"
-		buttonText = "Find out more"
+		slogan     = "Rebuilding Misguided Dreams"
+        subtitle   = "Founded in 2013, BoxUpCrime is now London's leading social youth organisation. We have helped thousands of young people throughout London from disadvantaged and troubled backgrounds to reclaim their dreams."
+        buttonText = "Find out more"
 
 
 	# About section
 	[params.about]
-		headline    = "We've got what you need!"
-		description = "[Lorem](//google.com) ipsum dolor sit amet, consectetur adipisicing elit. Praesentium similique eos eligendi error veritatis harum, sed aliquid totam, quam minus neque enim est architecto, ad. Maiores, aliquid, vitae!"
-		buttonText  = "Get started!"
+	    headline    = "Who We Are"
+        description = "BoxUpCrime is a social youth organisation operating out of the London borough Barking and Dagenham. We work with young people at risk of having their lives ruined by crime and motivate them to rebuild and recapture their dreams and aspirations. We believe that every young person is entitled to a bright future, inspired by their hopes and dreams, regardless of their background. We deliver our tailored sessions to schools, pupil referral units and community centres across London. In our weekly sessions, we offer a foundation of discipline through engaging boxing training, educational programmes and mentoring. We provide young people job opportunities and apprenticeships as a stepping stone to their future."
+        buttonText  = "Our Founder"
 
+    # Placeholder section
+    [params.getInvolved]
+        headline = "Get Involved"
 
-	# Mission section
-	[params.mission]
-		headline = "At your service"
+	# Achievements section
+    [params.achievements]
+        headline    = "Achievements and Awards"
 
-        [[params.services.list]]
-            icon = "fa-diamond"
-            title = "Sturdy Templates"
-            description = "Our templates are updated regularly so they don't break."
+    # Location section
+    [params.locations]
+        headline = "Our Locations"
+        description = "Please select one of our locations below:"
+        location1 = "BoxUp UK"
+        location2 = "BoxUp Switzerland"
+        location3 = "BoxUp Ghana"
 
-        [[params.services.list]]
-			icon = "fa-paper-plane"
-			title = "Ready to Ship"
-			description = "You can use this theme as is, or you can make changes!"
+        # Portfolio modals
+    	[params.portfolio.modal]
+            client = "Client"
+            date = "Date"
+            subtitle = "Subtitle"
+            buttonText = "Close"
 
-		[[params.services.list]]
-            icon = "fa-newspaper-o"
-            title = "Up to Date"
-            description = "We update dependencies to keep things fresh."
+        # Blog section
+    	[params.blog]
+    	    headline = "Let's Get In Touch!"
+    	    description = "Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!"
+    	    phone = "123-456-6789"
+    	    email = "feedback@startbootstrap.com"
 
-        [[params.services.list]]
-            icon = "fa-heart"
-            title = "Made with Love"
-            description = "You have to make your websites with love these days!"
-
-
-    # Portfolio modals
-	[params.portfolio.modal]
-        client = "Client"
-        date = "Date"
-        category = "Category"
-        buttonText = "Close"
-
-    # Aside section
-	[params.aside]
-		headline = "Get the Creative Theme for Hugo"
-
-		[params.aside.button]
-			text = "Download now"
-			link = "//github.com/digitalcraftsman/hugo-creative-theme"
-
-    # Blog section
-	[params.blog ]
-		headline = "Let's Get In Touch!"
-		description = "Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!"
-		phone = "123-456-6789"
-		email = "feedback@startbootstrap.com"
-
-
-    # Tv section
-	[params.tv]
-		headline = "Let's Get In Touch!"
-		description = "Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!"
-		phone = "123-456-6789"
-		email = "feedback@startbootstrap.com"
-
-	# Contact section
-	[params.contact]
-		headline = "Let's Get In Touch!"
-		description = "Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!"
-		phone = "123-456-6789"
-		email = "feedback@startbootstrap.com"
+    	# Contact section
+    	[params.contact]
+    	    headline = "Contact Us"
+    	    phone = "+44 (0) 208 517 4446"
+    	    email = "info@boxupcrime.org"
+    	    address = "59 Grosvenor Road, Dagenham, Essex, RM8 1NL"
+    	    openingTimes1 = "Monday: 09:00 - 17:00"
+    	    openingTimes2 = "Tuesday: 09:00 - 17:00"
+    	    openingTimes3 = "Wednesday: 09:00 - 17:00"
+    	    openingTimes4 = "Thursday: 09:00 - 17:00"
+    	    openingTimes5 = "Friday: 09:00 - 17:00"
 
 	# Google Maps section
 	# [params.location]

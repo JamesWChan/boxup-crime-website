@@ -1,14 +1,24 @@
-
-{{ if and .Site.Params.location.latitude .Site.Params.location.longitude }}
-<section id="location" class="no-padding">
-    <div class="hidden">
-        <input id="gmap-lat" value="{{ .Site.Params.location.latitude }}" />
-        <input id="gmap-lng" value="{{ .Site.Params.location.longitude }}" />
-    </div>
-    <a href="https://www.google.com/maps?z=16&q={{ .Site.Params.location.latitude }},{{ .Site.Params.location.longitude }}&ll={{ .Site.Params.location.latitude }},{{ .Site.Params.location.longitude }}">
-        <div id="map">
-            &nbsp;
+{{ "<!-- LOCATIONS -->" | safeHTML }}
+<section class="bg-primary" id="location">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                {{ with .Site.Params.locations.headline }}
+                    <h2 class="section-heading">{{ . }}</h2>
+                {{ end }}
+                {{ if and .Site.Params.locations.headline .Site.Params.locations.description }}
+                    <hr class="light">
+                {{ end }}
+                {{ with .Site.Params.locations.description }}
+                    <p class="text-faded">{{ . | markdownify }}</p>
+                {{ end }}
+                {{ range .Site.Data.locations }}
+                <div class="col-lg-4 col-md-12">    
+                    <a href="#locationModal{{ .modalID }}" class="btn btn-default btn-xl custom-btn" data-toggle="modal">{{.title}}</a>
+                </div>
+                {{ end }}
+            </div>
         </div>
-    </a>
+    </div>
 </section>
-{{ end }}
+

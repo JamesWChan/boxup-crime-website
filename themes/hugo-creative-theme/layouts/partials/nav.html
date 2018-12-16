@@ -10,41 +10,41 @@
                 <span class="icon-bar"></span>
             </button>
             {{ with .Site.Params.navigation.brand }}
-                <a class="navbar-brand page-scroll" href="#page-top">{{ . | markdownify }}</a>
+                <a class="navbar-brand page-scroll" href="#page-top"><img src="{{ . | absURL }}"></a>
             {{ end }}
         </div>
         {{ "<!-- Collect the nav links, forms, and other content for toggling -->" | safeHTML }}
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 {{ if and .Site.Params.about .Site.Params.navigation.links.about }}
-                    <li>
-                        <a class="page-scroll" href="#about">{{ .Site.Params.navigation.links.about }}</a>
-                    </li>
+                <li>
+                    <a class="page-scroll" href="#about">{{ .Site.Params.navigation.links.about }}</a>
+                </li>
                 {{ end }}
-                {{ if and .Site.Params.mission .Site.Params.navigation.links.mission }}
-                    <li>
-                        <a class="page-scroll" href="#mission">Our mission</a>
-                    </li>
+                {{ if and .Site.Params.getInvolved .Site.Params.navigation.links.getInvolved }}
+                <li>
+                    <a class="page-scroll" href="#portfolio">{{ .Site.Params.navigation.links.getInvolved }}</a>
+                </li>
                 {{ end }}
                 {{ if and .Site.Data.projects .Site.Params.navigation.links.location }}
-                    <li>
-                        <a class="page-scroll" href="#location">{{ .Site.Params.navigation.links.location }}</a>
-                    </li>
+                <li>
+                    <a class="page-scroll" href="#location">{{ .Site.Params.navigation.links.location }}</a>
+                </li>
                 {{ end }}
-                {{ if and .Site.Params.blog .Site.Params.navigation.links.blog }}
+                {{ if and .Site.Params.achievements .Site.Params.navigation.links.achievements }}
+                <li>
+                    <a class="page-scroll" href="#achievements">{{ .Site.Params.navigation.links.achievements }}</a>
+                </li>
+                {{ end }}
+                <!--{{ if and .Site.Params.blog .Site.Params.navigation.links.blog }}
                 <li>
                     <a class="page-scroll" href="#blog">{{ .Site.Params.navigation.links.blog }}</a>
                 </li>
-                {{ end }}
-                {{ if and .Site.Params.tv .Site.Params.navigation.links.tv }}
-                    <li>
-                        <a class="page-scroll" href="#tv">{{ .Site.Params.navigation.links.tv }}</a>
-                    </li>
-                {{ end }}
+                {{ end }}-->
                 {{ if and .Site.Params.contact .Site.Params.navigation.links.contact }}
-                    <li>
-                        <a class="page-scroll" href="#contact">{{ .Site.Params.navigation.links.contact }}</a>
-                    </li>
+                <li>
+                    <a class="page-scroll" href="#contact">{{ .Site.Params.navigation.links.contact }}</a>
+                </li>
                 {{ end }}
             </ul>
         </div>
