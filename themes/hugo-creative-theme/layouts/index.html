@@ -1,3 +1,10 @@
+<!--
+
+*** NOTICE ***
+This file has been modified by James Chan as part of a coursework assignment set by Ada, the National College for Digital Skills
+
+-->
+
 <!DOCTYPE html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
     <head>
@@ -16,8 +23,8 @@
         {{ partial "about.html" . }}
         {{ end }}
 
-        {{ if .Site.Params.mission }}
-        {{ partial "mission.html" . }}
+        {{ if .Site.Data.projects }}
+        {{ partial "portfolio.html" . }}
         {{ end }}
 
         {{ if .Site.Params.locations }}
@@ -28,13 +35,7 @@
         {{ partial "achievements.html" . }}
         {{ end }}
 
-        <!--{{ if .Site.Data.projects }}
-        {{ partial "portfolio.html" . }}
-        {{ end }}-->
-
-        <!--{{ if .Site.Params.blog }}
-        {{ partial "blog.html" . }}
-        {{ end }}-->
+        {{ partial "video.html" .}}
 
         {{ if .Site.Params.contact }}
         {{ partial "contact.html" . }}
@@ -53,7 +54,5 @@
         {{ end }}
 
         {{ partial "js.html" . }}
-
-        {{ template "_internal/google_analytics.html" . }}
     </body>
 </html>

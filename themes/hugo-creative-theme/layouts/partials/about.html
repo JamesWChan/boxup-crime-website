@@ -1,5 +1,5 @@
 {{ "<!-- ABOUT -->" | safeHTML }}
-<section class="bg-primary" id="about">
+<section id="about">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -7,15 +7,15 @@
                     <h2 class="section-heading">{{ . }}</h2>
                 {{ end }}
                 {{ if and .Site.Params.about.headline .Site.Params.about.description }}
-                    <hr class="light">
+                    <hr class="primary">
                 {{ end }}
                 {{ with .Site.Params.about.description }}
-                    <p class="text-faded">{{ . | markdownify }}</p>
+                    <p>{{ . | markdownify }}</p>
                 {{ end }}
-                <div class="container-fluid col-lg-offset-3">
+                <div class="container-fluid">
                         {{ range .Site.Data.about }}
                         <div class="col-lg-4 col-md-12">
-                            <a href="#aboutModal{{ .modalID }}" class="btn btn-default btn-xl custom-btn" data-toggle="modal">{{.title}}</a>
+                            <a href="#aboutModal{{ .modalID }}" class="btn btn-primary btn-xl custom-btn" data-toggle="modal">{{.title}}</a>
                         </div>
                         {{ end }}
                 </div>

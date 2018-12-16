@@ -47,3 +47,27 @@ th {
 .social-icons {
     margin: .1em;
 }
+
+h2#classes {
+    margin-top: 2em;
+}
+
+#copyright {
+    padding-top: 2em;
+}
+
+.video{
+    width: 100%;
+}
+
+.contact {
+    margin-bottom: .3em;
+}
+
+section#intro-video {
+    padding: 0;
+}
+
+body section#portfolio .boxup-image {
+    width: 100%
+}

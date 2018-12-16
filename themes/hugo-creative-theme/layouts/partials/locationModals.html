@@ -23,9 +23,10 @@
                         <p>{{ . | markdownify }}</p>
                         {{ end }}
                         {{ with .subtitle }}
-                        <h2>{{ . }}</h2>
+                        <h2 id="classes">{{ . }}</h2>
                         <hr class="star-primary">
                         {{ end }}
+                        {{ if and .class1 .class1Location .class1Age }}
                         <table class="table">
                             <thead>
                             <tr>
@@ -47,6 +48,7 @@
                             </tr>
                             </tbody>
                         </table>
+                        {{ end }}
                         {{ with $.Site.Params.portfolio.modal.buttonText }}
                         <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>{{.}}</button>
                         {{ end }}
