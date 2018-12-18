@@ -23,8 +23,8 @@ This file has been modified by James Chan as part of a coursework assignment set
         {{ partial "about.html" . }}
         {{ end }}
 
-        {{ if .Site.Data.projects }}
-        {{ partial "portfolio.html" . }}
+        {{ if .Site.Data.boxup }}
+        {{ partial "boxup.html" . }}
         {{ end }}
 
         {{ if .Site.Params.locations }}
@@ -45,8 +45,8 @@ This file has been modified by James Chan as part of a coursework assignment set
         {{ partial "aboutModals.html" . }}
         {{ end }}
 
-        {{ if .Site.Data.workWithUs }}
-        {{ partial "workWithUsModal.html" . }}
+        {{ if .Site.Data.boxup }}
+        {{ partial "boxUpModals.html" . }}
         {{ end }}
 
         {{ if .Site.Data.locations }}
