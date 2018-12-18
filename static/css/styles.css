@@ -45,6 +45,11 @@ th {
 }
 
 .social-icons {
+    margin-right: 1em;
+    text-align: center;
+}
+
+.social-icon {
     margin: .1em;
 }
 
