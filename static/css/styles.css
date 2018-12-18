@@ -76,3 +76,24 @@ section#intro-video {
 body section#portfolio .boxup-image {
     width: 100%
 }
+
+.ex3 .hide3 {
+    width: 50%;
+    display: table;
+    height: 150px; /* any arbitrary height but best at the minimum initial height you would want. */
+    overflow: hidden;
+    background: red;
+    transition: all 0.5s ease;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+.inner3 {
+    padding: 10px;
+}
+.ex3 input[type="checkbox"]:checked + .hide3 {
+    height: 0;
+    opacity: 0;
+    display: block;
+}
+
+
