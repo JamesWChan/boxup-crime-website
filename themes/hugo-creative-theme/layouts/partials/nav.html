@@ -26,7 +26,7 @@
                     <a class="page-scroll" href="#portfolio">{{ .Site.Params.navigation.links.getInvolved }}</a>
                 </li>
                 {{ end }}
-                {{ if and .Site.Data.projects .Site.Params.navigation.links.location }}
+                {{ if and .Site.Data.locations .Site.Params.navigation.links.location }}
                 <li>
                     <a class="page-scroll" href="#location">{{ .Site.Params.navigation.links.location }}</a>
                 </li>
@@ -36,11 +36,6 @@
                     <a class="page-scroll" href="#achievements">{{ .Site.Params.navigation.links.achievements }}</a>
                 </li>
                 {{ end }}
-                <!--{{ if and .Site.Params.blog .Site.Params.navigation.links.blog }}
-                <li>
-                    <a class="page-scroll" href="#blog">{{ .Site.Params.navigation.links.blog }}</a>
-                </li>
-                {{ end }}-->
                 {{ if and .Site.Params.contact .Site.Params.navigation.links.contact }}
                 <li>
                     <a class="page-scroll" href="#contact">{{ .Site.Params.navigation.links.contact }}</a>
