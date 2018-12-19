@@ -112,3 +112,7 @@ body section#portfolio .boxup-image {
 p.boxup-modal-description {
     text-align: left;
 }
+
+table.table td {
+    width: 33%;
+}
