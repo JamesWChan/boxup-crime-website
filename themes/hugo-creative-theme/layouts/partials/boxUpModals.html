@@ -1,39 +1,3 @@
-<!--
-{{ "&lt;!&ndash; BoxUp Modals &ndash;&gt;" | safeHTML }}
-{{ range .Site.Data.boxup }}
-<div class="portfolio-modal modal fade" id="boxupModals{{ .modalID }}" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="modal-body">
-                        {{ with .title }}
-                        <h2>{{ . }}</h2>
-                        {{ end }}
-                        {{ if and .title .description }}
-                        <hr class="star-primary">
-                        {{ end }}
-                        <img src="img/general/{{ .img }}" class="img-responsive img-centered" alt="">
-                        {{ with .description }}
-                        <p>{{ . | markdownify }}</p>
-                        {{ end }}
-                        {{ with $.Site.Params.modals.buttonText }}
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>{{.}}</button>
-                        {{ end }}
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-{{ end }}-->
-
 {{ "<!-- BOXUP MODALS -->" | safeHTML }}
 {{ range .Site.Data.boxup }}
 <div class="portfolio-modal modal fade" id="boxUpModal{{ .modalID }}" tabindex="-1" role="dialog" aria-hidden="true">
@@ -50,34 +14,53 @@
                     <div class="modal-body">
                         {{ with .title }}
                         <h2>{{ . }}</h2>
-                        {{ end }}
-                        {{ if and .title .description }}
                         <hr class="star-primary">
                         {{ end }}
                         <img src="img/general/{{ .img }}" class="img-responsive img-centered" alt="">
                         {{ with .description }}
                         <p>{{ . | markdownify }}</p>
                         {{ end }}
-                        {{ if or .client .date .category }}
-                        <ul class="list-inline item-details">
-                            {{ if .client }}
-                            <li>{{ with $.Site.Params.portfolio.modal.client }}{{.}}: {{ end }}
-                                <strong><a href="{{ with .clientLink }}{{ . }}{{ else }}#{{ end }}">{{ .client }}</a></strong>
-                            </li>
-                            {{ end }}
-                            {{ if .date }}
-                            <li>{{ with $.Site.Params.portfolio.modal.date }}{{.}}: {{ end }}
-                                <strong><a href="#">{{ .date }}</a></strong>
-                            </li>
-                            {{ end }}
-                            {{ if .category }}
-                            <li>{{ with $.Site.Params.portfolio.modal.category }}{{.}}: {{ end }}
-                                <strong><a href="#">{{ .category }}</a></strong>
-                            </li>
-                            {{ end }}
-                        </ul>
+                        {{ if and .sectionHeading1 .section1}}
+                        {{ with .sectionHeading1 }}
+                        <button class="accordion">{{ . }}</button>
                         {{ end }}
-                        {{ with $.Site.Params.portfolio.modal.buttonText }}
+                        {{ with .section1 }}
+                        <div class="panel">
+                            <p>{{ . | markdownify }}</p>
+                        </div>
+                        {{ end }}
+                        {{ end}}
+                        {{ if and .sectionHeading2 .section2}}
+                        {{ with .sectionHeading2 }}
+                        <button class="accordion">{{ . }}</button>
+                        {{ end }}
+                        {{ with .section2 }}
+                        <div class="panel">
+                            <p>{{ . | markdownify }}</p>
+                        </div>
+                        {{ end }}
+                        {{ end}}
+                        {{ if and .sectionHeading3 .section3}}
+                        {{ with .sectionHeading3 }}
+                        <button class="accordion">{{ . }}</button>
+                        {{ end }}
+                        {{ with .section3 }}
+                        <div class="panel">
+                            <p>{{ . | markdownify }}</p>
+                        </div>
+                        {{ end }}
+                        {{ end}}
+                        {{ if and .sectionHeading4 .section4 }}
+                        {{ with .sectionHeading4 }}
+                        <button class="accordion">{{ . }}</button>
+                        {{ end }}
+                        {{ with .section4 }}
+                        <div class="panel">
+                            <p>{{ . | markdownify }}</p>
+                        </div>
+                        {{ end }}
+                        {{ end}}
+                        {{ with $.Site.Params.modals.buttonText }}
                         <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>{{.}}</button>
                         {{ end }}
                     </div>

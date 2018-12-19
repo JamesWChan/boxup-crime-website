@@ -77,23 +77,28 @@ body section#portfolio .boxup-image {
     width: 100%
 }
 
-.ex3 .hide3 {
-    width: 50%;
-    display: table;
-    height: 150px; /* any arbitrary height but best at the minimum initial height you would want. */
-    overflow: hidden;
-    background: red;
-    transition: all 0.5s ease;
-    border-left: 1px solid #000;
-    border-right: 1px solid #000;
-}
-.inner3 {
-    padding: 10px;
-}
-.ex3 input[type="checkbox"]:checked + .hide3 {
-    height: 0;
-    opacity: 0;
-    display: block;
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
 }
 
+.activeTab, .accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
 

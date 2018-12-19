@@ -38,7 +38,7 @@ googleAnalytics = ""
 		[params.navigation.links]
 			about        = "About Us"
 			getInvolved  = "Get Involved"
-            location     = "Locations"
+            location     = "Locations & Classes"
             achievements = "Achievements"
             blog         = "Blog"
             contact      = "Contact Us"
@@ -55,7 +55,7 @@ googleAnalytics = ""
 	# About section
 	[params.about]
 	    headline    = "Who We Are"
-        description = "BoxUpCrime is a social youth organisation operating out of the London borough Barking and Dagenham. We work with young people at risk of having their lives ruined by crime and motivate them to rebuild and recapture their dreams and aspirations. We believe that every young person is entitled to a bright future, inspired by their hopes and dreams, regardless of their background. We deliver our tailored sessions to schools, pupil referral units and community centres across London. In our weekly sessions, we offer a foundation of discipline through engaging boxing training, educational programmes and mentoring. We provide young people job opportunities and apprenticeships as a stepping stone to their future."
+        description = "BoxUpCrime is a social youth organisation operating out of the London borough Barking and Dagenham. We work with young people at risk of having their lives ruined by crime and motivate them to rebuild and recapture their dreams and aspirations. We believe that every young person is entitled to a bright future, inspired by their hopes and dreams, regardless of their background.<br/><br/>We deliver our tailored sessions to schools, pupil referral units and community centres across London. In our weekly sessions, we offer a foundation of discipline through engaging boxing training, educational programmes and mentoring. We provide young people job opportunities and apprenticeships as a stepping stone to their future."
         buttonText  = "Our Founder"
 
     # Placeholder section
@@ -68,16 +68,14 @@ googleAnalytics = ""
 
     # Location section
     [params.locations]
-        headline = "Our Locations"
-        description = "Please select one of our locations below:"
+        headline = "Our Locations & Classes"
+        description = "Please select one of our locations below to find out more:"
         location1 = "BoxUp UK"
         location2 = "BoxUp Switzerland"
         location3 = "BoxUp Ghana"
 
         # Modals
     	[params.modals]
-            client = "Client"
-            date = "Date"
             subtitle = "Subtitle"
             buttonText = "Close"
 
