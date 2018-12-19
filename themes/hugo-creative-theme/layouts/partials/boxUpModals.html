@@ -16,9 +16,31 @@
                             <h2>{{ . }}</h2>
                             <hr class="star-primary">
                         {{ end }}
-                            <img src="img/general/{{ .img }}" class="img-responsive img-centered" alt="">
+                            <img src="img/general/{{ .img }}" class="img-responsive img-centered" alt="{{ .imgAlt }}">
+                        {{ if .ourPartnersHeading }}
+                            {{ with .ourPartnersHeading }}
+                                <h3 class="our-partners">{{ . | markdownify }}</h3>
+                            {{ end }}
+                            <div class="col-lg-12 col-md-12">
+                            {{ if .partnerLogo1 }}
+                                <div class="col-lg-6 col-md-6">
+                                    <img src="img/partners/{{ .partnerLogo1 }}" class="img-responsive img-centered" alt="London City Mission logo">
+                                </div>
+                            {{ end }}
+                            {{ if .partnerLogo2 }}
+                                <div class="col-lg-6 col-md-6">
+                                    <img src="img/partners/{{ .partnerLogo2 }}" class="img-responsive img-centered" alt="London South Bank University logo">
+                                </div>
+                            {{ end}}
+                            </div>
+                        {{ end}}
                         {{ with .description }}
                             <p class="boxup-modal-description">{{ . | markdownify }}</p>
+                        {{ end }}
+                        {{ if .partnerWithUs }}
+                            {{ with .partnerWithUs }}
+                                <p id="partner-with-us">{{ . | markdownify }}</p>
+                            {{ end }}
                         {{ end }}
                         {{ if and .sectionHeading1 .section1}}
                             {{ with .sectionHeading1 }}
@@ -59,23 +81,6 @@
                                     <p>{{ . | markdownify }}</p>
                                 </div>
                             {{ end }}
-                        {{ end}}
-                        {{ if .ourPartnersHeading }}
-                            {{ with .ourPartnersHeading }}
-                                <h3 class="our-partners">{{ . | markdownify }}</h3>
-                            {{ end }}
-                            <div class="col-lg-12 col-md-12">
-                            {{ if .partnerLogo1 }}
-                                <div class="col-lg-6 col-md-6">
-                                    <img src="img/partners/{{ .partnerLogo1 }}" class="img-responsive img-centered" alt="">
-                                </div>
-                            {{ end }}
-                            {{ if .partnerLogo2 }}
-                                <div class="col-lg-6 col-md-6">
-                                    <img src="img/partners/{{ .partnerLogo2 }}" class="img-responsive img-centered" alt="">
-                                </div>
-                            {{ end}}
-                            </div>
                         {{ end}}
                         {{ with $.Site.Params.modals.buttonText }}
                             <button aria-labelledby="Close" type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>{{.}}</button>
