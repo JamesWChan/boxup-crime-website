@@ -60,6 +60,14 @@
                         </div>
                         {{ end }}
                         {{ end}}
+                        {{ if and .ourPartnersHeading .ourPartners }}
+                        {{ with .ourPartnersHeading }}
+                            <h3>{{ . | markdownify }}</h3>
+                        {{ end }}
+                        {{ with .ourPartners }}
+                            <p>{{ . | markdownify }}</p>
+                        {{ end }}
+                        {{ end}}
                         {{ with $.Site.Params.modals.buttonText }}
                         <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>{{.}}</button>
                         {{ end }}

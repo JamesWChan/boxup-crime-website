@@ -1,5 +1,9 @@
 modalID: 6
-title: Logo
-modalTitle: Logo
-img: logo2.png
-role: logo
+title: Partners
+modalTitle: Partners
+img: img6.png
+subtitle: Work with us
+description: Interested in partnering with us? Contact us for more information!
+ourPartnersHeading: Our partners:<br/>
+ourPartners: City Hall, London City Mission, South Bank University
+buttonText: Close
