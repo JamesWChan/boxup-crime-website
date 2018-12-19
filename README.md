@@ -1,3 +1,7 @@
+# Ada College - Web Design and Authoring module
+
+This repository contains the coursework for the Web Design and Authoring module as part of the Digital Innovation Foundation Degree.
+
 ## Installation
 
 Please follow the instructions below to access this website locally.
