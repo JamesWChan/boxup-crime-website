@@ -15,11 +15,9 @@
         <div class="row">
             {{ range .Site.Data.achievements }}
             <div class="col-lg-4 col-md-6">
-                <img src="img/achievements/{{ .img }}" class="img-responsive" alt="">
+                <img src="img/achievements/{{ .img }}" class="img-responsive achievement" alt="">
             </div>
             {{ end }}
-        </div>
-        <div class="row">
             {{ range .Site.Data.awards }}
             <div class="col-lg-4 col-md-6">
                 <img src="img/awards/{{ .img }}" class="img-responsive award" alt="">
