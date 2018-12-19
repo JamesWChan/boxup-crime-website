@@ -1,31 +1,31 @@
 {{ "<!-- ABOUT -->" | safeHTML }}
-<section class="no-padding" id="portfolio">
+<section class="no-padding" id="getInvolved">
     <div class="container-fluid">
         <div class="row no-gutter">
             {{ range .Site.Data.boxup }}
-            <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-sm-6">
                 {{ if and .title .subtitle }}
-                <a href="#boxUpModal{{ .modalID }}" class="portfolio-box portfolio-link" data-toggle="modal">
-                    <img src="img/general/{{ .img }}" class="img-responsive boxup-image" alt="">
-                    {{ end }}
+                    <a aria-label="Hyperlinks for BoxUp modals" href="#boxUpModal{{ .modalID }}" class="portfolio-box portfolio-link" data-toggle="modal">
+                        <img src="img/general/{{ .img }}" class="img-responsive boxup-image" alt="{{ .imgAlt }}">
+                {{ end }}
                     {{ if and .title .subtitle }}
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            {{ with .title }}
-                            <div class="project-name">
-                                {{ . }}
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                {{ with .title }}
+                                    <div class="project-name">
+                                        {{ . }}
+                                    </div>
+                                {{ end }}
+                                {{ with .subtitle }}
+                                    <div class="project-category text-faded">
+                                        {{ . }}
+                                    </div>
+                                {{ end }}
                             </div>
-                            {{ end }}
-                            {{ with .subtitle }}
-                            <div class="project-category text-faded">
-                                {{ . }}
-                            </div>
-                            {{ end }}
                         </div>
-                    </div>
                     {{ end }}
-                </a>
-            </div>
+                    </a>
+                </div>
             {{ end }}
         </div>
     </div>

@@ -2,8 +2,10 @@ modalID: 6
 title: Partners
 modalTitle: Partners
 img: img6.png
+imgAlt: Stephen Addison giving a public speech
 subtitle: Work with us
 description: Interested in partnering with us? Contact us for more information!
 ourPartnersHeading: Our partners:<br/>
-ourPartners: City Hall, London City Mission, South Bank University
+partnerLogo1: img1.png
+partnerLogo2: img2.png
 buttonText: Close

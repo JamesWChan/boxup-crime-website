@@ -18,12 +18,12 @@
                         {{ if and .title .description }}
                             <hr class="star-primary">
                         {{ end }}
-                        <img src="img/about/{{ .img }}" class="img-responsive img-centered" alt="">
+                        <img src="img/about/{{ .img }}" class="img-responsive img-centered" alt="{{ .imgAlt }}">
                         {{ with .description }}
                             <p>{{ . | markdownify }}</p>
                         {{ end }}
                         {{ with $.Site.Params.modals.buttonText }}
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>{{.}}</button>
+                            <button aria-labelledby="Close" type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>{{.}}</button>
                         {{ end }}
                     </div>
                 </div>

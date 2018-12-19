@@ -73,7 +73,7 @@ section#intro-video {
     padding: 0;
 }
 
-body section#portfolio .boxup-image {
+body section#getInvolved .boxup-image {
     width: 100%
 }
 
@@ -119,4 +119,8 @@ table.table td {
 
 p#class-charge {
     margin-top: 1em;
+}
+
+h3.our-partners {
+    margin-bottom: 2em;
 }

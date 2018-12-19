@@ -14,13 +14,13 @@
                 {{ end }}
                 {{ range .Site.Data.locations }}
                 <div class="col-lg-4 col-md-12">    
-                    <a href="#locationModal{{ .modalID }}" class="btn btn-default btn-xl custom-btn" data-toggle="modal">{{.title}}</a>
+                    <a aria-label="Hyperlinks for location modals" href="#locationModal{{ .modalID }}" class="btn btn-default btn-xl custom-btn" data-toggle="modal">{{.title}}</a>
                 </div>
                 {{ end }}
             </div>
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 {{ with .Site.Params.locations.charge }}
-                <p id="class-charge" class="text-faded">{{ . }}</p>
+                    <p id="class-charge" class="text-faded">{{ . }}</p>
                 {{ end }}
             </div>
         </div>

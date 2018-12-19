@@ -23,7 +23,7 @@ This file has been modified by James Chan as part of a coursework assignment set
         </div>
         <div class="row">
             <div class="col-lg-3">
-                <img class="center-block" src="img/logo.png">
+                <img class="center-block" src="img/logo.png" alt="BoxUp Crime logo">
             </div>
             <div class="col-md-8">
             {{ if .Site.Params.contact.phone }}
@@ -34,7 +34,7 @@ This file has been modified by James Chan as part of a coursework assignment set
                     col-lg-8
                 {{ end }}
                 col-lg-offset-2 text-center">
-                    <i class="contact fa fa-phone fa-3x wow bounceIn"></i>
+                    <i class="contact fa fa-phone fa-3x wow bounceIn" title="Phone us"></i>
                     <p>{{ .Site.Params.contact.phone }}</p>
                 </div>
             {{ end }}
@@ -46,7 +46,7 @@ This file has been modified by James Chan as part of a coursework assignment set
                     col-lg-8 col-lg-offset-2
                 {{ end }}
                  text-center">
-                    <i class="contact fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                    <i class="contact fa fa-envelope-o fa-3x wow bounceIn" title="Email us" data-wow-delay=".1s"></i>
                     <p>{{ .Site.Params.contact.email }}</p>
                 </div>
             {{ end }}
@@ -57,7 +57,7 @@ This file has been modified by James Chan as part of a coursework assignment set
                     col-lg-8
                 {{ end }}
                 col-lg-offset-2 text-center">
-                <i class="contact fa fa-building-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                <i class="contact fa fa-building-o fa-3x wow bounceIn" title="Address" data-wow-delay=".1s"></i>
                 <p>{{ .Site.Params.contact.address }}</p>
             </div>
             {{ end }}
@@ -69,7 +69,7 @@ This file has been modified by James Chan as part of a coursework assignment set
                     col-lg-8 col-lg-offset-2
                 {{ end }}
                  text-center">
-                <i class="contact fa fa-clock-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                <i class="contact fa fa-clock-o fa-3x wow bounceIn" title="Opening times" data-wow-delay=".1s"></i>
                 <p>{{ .Site.Params.contact.openingTimes1 }}</p>
                 <p>{{ .Site.Params.contact.openingTimes2 }}</p>
                 <p>{{ .Site.Params.contact.openingTimes3 }}</p>
@@ -81,10 +81,10 @@ This file has been modified by James Chan as part of a coursework assignment set
         </div>
         <div class="row">
             <div class="social-icons col-lg-3">
-                <a target="_blank" href="https://twitter.com/boxupcrime?lang=en"><i class="social-icon fa fa-twitter-square fa-3x wow bounceIn" data-wow-delay=".1s"></i></a>
-                <a target="_blank" href="https://www.facebook.com/OfficialBoxUp/videos/813655222114512/"><i class="social-icon fa fa-facebook-square fa-3x wow bounceIn" data-wow-delay=".1s"></i></a>
-                <a target="_blank" href="https://www.instagram.com/boxupcrime/"><i class="social-icon fa fa-instagram fa-3x wow bounceIn" data-wow-delay=".1s"></i></a>
-                <a target="_blank" href="https://www.youtube.com/channel/UC08DwZ1Ft4mBkH_RI7uHPBg/"><i class="social-icon fa fa-youtube fa-3x wow bounceIn" data-wow-delay=".1s"></i></a>
+                <a target="_blank" href="https://twitter.com/boxupcrime?lang=en"><i class="social-icon fa fa-twitter-square fa-3x wow bounceIn" title="Twitter icon" data-wow-delay=".1s"></i></a>
+                <a target="_blank" href="https://www.facebook.com/OfficialBoxUp/videos/813655222114512/"><i class="social-icon fa fa-facebook-square fa-3x wow bounceIn" title="Facebook icon" data-wow-delay=".1s"></i></a>
+                <a target="_blank" href="https://www.instagram.com/boxupcrime/"><i class="social-icon fa fa-instagram fa-3x wow bounceIn" title="Instagram icon" data-wow-delay=".1s"></i></a>
+                <a target="_blank" href="https://www.youtube.com/channel/UC08DwZ1Ft4mBkH_RI7uHPBg/"><i class="social-icon fa fa-youtube fa-3x wow bounceIn" title="Youtube icon" data-wow-delay=".1s"></i></a>
             </div>
         </div>
         <div class="row">

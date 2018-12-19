@@ -48,7 +48,7 @@ googleAnalytics = ""
 	[params.hero]
 		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
 		slogan     = "Rebuilding Misguided Dreams"
-        subtitle   = "Founded in 2013, BoxUpCrime is now London's leading social youth organisation. We have helped thousands of young people throughout London from disadvantaged and troubled backgrounds to reclaim their dreams."
+        subtitle   = "Founded in 2013, BoxUpCrime is now London's leading social youth organisation. We have helped thousands of young people throughout London from disadvantaged and troubled backgrounds to reclaim their dreams. Find out more about our work below."
         buttonText = "Find out more"
 
 

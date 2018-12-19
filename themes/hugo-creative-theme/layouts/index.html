@@ -12,45 +12,45 @@ This file has been modified by James Chan as part of a coursework assignment set
     </head>
     <body id="page-top">
         {{ if or .Site.Params.navigation.links.about .Site.Params.navigation.links.mission .Site.Params.navigation.links.location .Site.Params.navigation.links.blog .Site.Params.navigation.links.contact }}
-        {{ partial "nav.html" . }}
+            {{ partial "nav.html" . }}
         {{ end }}
 
         {{ if .Site.Params.hero }}
-        {{ partial "hero.html" . }}
+            {{ partial "hero.html" . }}
         {{ end }}
 
         {{ if .Site.Params.about }}
-        {{ partial "about.html" . }}
+            {{ partial "about.html" . }}
         {{ end }}
 
         {{ if .Site.Data.boxup }}
-        {{ partial "boxup.html" . }}
+            {{ partial "boxup.html" . }}
         {{ end }}
 
         {{ if .Site.Params.locations }}
-        {{ partial "location.html" . }}
+            {{ partial "location.html" . }}
         {{ end }}
 
         {{ if .Site.Params.achievements }}
-        {{ partial "achievements.html" . }}
+            {{ partial "achievements.html" . }}
         {{ end }}
 
         {{ partial "video.html" .}}
 
         {{ if .Site.Params.contact }}
-        {{ partial "contact.html" . }}
+            {{ partial "contact.html" . }}
         {{ end }}
 
         {{ if .Site.Data.about }}
-        {{ partial "aboutModals.html" . }}
+            {{ partial "aboutModals.html" . }}
         {{ end }}
 
         {{ if .Site.Data.boxup }}
-        {{ partial "boxUpModals.html" . }}
+            {{ partial "boxUpModals.html" . }}
         {{ end }}
 
         {{ if .Site.Data.locations }}
-        {{ partial "locationModals.html" . }}
+            {{ partial "locationModals.html" . }}
         {{ end }}
 
         {{ partial "js.html" . }}

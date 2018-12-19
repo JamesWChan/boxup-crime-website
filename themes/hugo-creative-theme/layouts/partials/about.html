@@ -20,11 +20,11 @@ This file has been modified by James Chan as part of a coursework assignment set
                     <p>{{ . | markdownify }}</p>
                 {{ end }}
                 <div class="container-fluid">
-                        {{ range .Site.Data.about }}
-                        <div class="col-lg-4 col-md-12">
-                            <a href="#aboutModal{{ .modalID }}" class="btn btn-primary btn-xl custom-btn" data-toggle="modal">{{.title}}</a>
-                        </div>
-                        {{ end }}
+                    {{ range .Site.Data.about }}
+                    <div class="col-lg-4 col-md-12">
+                        <a aria-label="Hyperlinks for about modals"  href="#aboutModal{{ .modalID }}" class="btn btn-primary btn-xl custom-btn" data-toggle="modal">{{.title}}</a>
+                    </div>
+                    {{ end }}
                 </div>
             </div>
         </div>
