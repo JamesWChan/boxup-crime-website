@@ -1,5 +1,11 @@
 modalID: 6
-title: Logo
-modalTitle: Logo
-img: logo2.png
-role: logo
+title: Partners
+modalTitle: Partners
+img: img6.png
+imgAlt: Stephen Addison giving a public speech
+subtitle: Work with us
+partnerWithUs: Interested in partnering with us? Contact us for more information!
+ourPartnersHeading: Our partners:<br/>
+partnerLogo1: img1.png
+partnerLogo2: img2.png
+buttonText: Close

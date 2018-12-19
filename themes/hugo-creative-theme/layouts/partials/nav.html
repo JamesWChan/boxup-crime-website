@@ -24,29 +24,29 @@ This file has been modified by James Chan as part of a coursework assignment set
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 {{ if and .Site.Params.about .Site.Params.navigation.links.about }}
-                <li>
-                    <a class="page-scroll" href="#about">{{ .Site.Params.navigation.links.about }}</a>
-                </li>
+                    <li>
+                        <a aria-labelledby="About hyperlink" class="page-scroll" href="#about">{{ .Site.Params.navigation.links.about }}</a>
+                    </li>
                 {{ end }}
                 {{ if and .Site.Params.getInvolved .Site.Params.navigation.links.getInvolved }}
-                <li>
-                    <a class="page-scroll" href="#portfolio">{{ .Site.Params.navigation.links.getInvolved }}</a>
-                </li>
+                    <li>
+                        <a aria-labelledby="Get involved hyperlink" class="page-scroll" href="#getInvolved">{{ .Site.Params.navigation.links.getInvolved }}</a>
+                    </li>
                 {{ end }}
                 {{ if and .Site.Data.locations .Site.Params.navigation.links.location }}
-                <li>
-                    <a class="page-scroll" href="#location">{{ .Site.Params.navigation.links.location }}</a>
-                </li>
+                    <li>
+                        <a aria-labelledby="Location and classes hyperlink" class="page-scroll" href="#location">{{ .Site.Params.navigation.links.location }}</a>
+                    </li>
                 {{ end }}
                 {{ if and .Site.Params.achievements .Site.Params.navigation.links.achievements }}
-                <li>
-                    <a class="page-scroll" href="#achievements">{{ .Site.Params.navigation.links.achievements }}</a>
-                </li>
+                    <li>
+                        <a aria-labelledby="Achievements and awards hyperlink" class="page-scroll" href="#achievements">{{ .Site.Params.navigation.links.achievements }}</a>
+                    </li>
                 {{ end }}
                 {{ if and .Site.Params.contact .Site.Params.navigation.links.contact }}
-                <li>
-                    <a class="page-scroll" href="#contact">{{ .Site.Params.navigation.links.contact }}</a>
-                </li>
+                    <li>
+                        <a aria-labelledby="Contact hyperlink" class="page-scroll" href="#contact">{{ .Site.Params.navigation.links.contact }}</a>
+                    </li>
                 {{ end }}
             </ul>
         </div>
