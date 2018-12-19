@@ -116,3 +116,7 @@ p.boxup-modal-description {
 table.table td {
     width: 33%;
 }
+
+p#class-charge {
+    margin-top: 1em;
+}

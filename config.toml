@@ -68,23 +68,24 @@ googleAnalytics = ""
 
     # Location section
     [params.locations]
-        headline = "Our Locations & Classes"
+        headline    = "Our Locations & Classes"
         description = "Please select one of our locations below to find out more:"
-        location1 = "BoxUp UK"
-        location2 = "BoxUp Switzerland"
-        location3 = "BoxUp Ghana"
+        charge      = "* our classes are free of charge"
+        location1   = "BoxUp UK"
+        location2   = "BoxUp Switzerland"
+        location3   = "BoxUp Ghana"
 
         # Modals
     	[params.modals]
-            subtitle = "Subtitle"
+            subtitle   = "Subtitle"
             buttonText = "Close"
 
     	# Contact section
     	[params.contact]
-    	    headline = "Contact Us"
-    	    phone = "+44 (0) 208 517 4446"
-    	    email = "info@boxupcrime.org"
-    	    address = "59 Grosvenor Road, Dagenham, Essex, RM8 1NL"
+    	    headline      = "Contact Us"
+    	    phone         = "+44 (0) 208 517 4446"
+    	    email         = "info@boxupcrime.org"
+    	    address       = "59 Grosvenor Road, Dagenham, Essex, RM8 1NL"
     	    openingTimes1 = "Monday: 09:00 - 17:00"
     	    openingTimes2 = "Tuesday: 09:00 - 17:00"
     	    openingTimes3 = "Wednesday: 09:00 - 17:00"
