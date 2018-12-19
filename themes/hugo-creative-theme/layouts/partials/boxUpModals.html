@@ -18,7 +18,7 @@
                         {{ end }}
                         <img src="img/general/{{ .img }}" class="img-responsive img-centered" alt="">
                         {{ with .description }}
-                        <p>{{ . | markdownify }}</p>
+                        <p class="boxup-modal-description">{{ . | markdownify }}</p>
                         {{ end }}
                         {{ if and .sectionHeading1 .section1}}
                         {{ with .sectionHeading1 }}
